@@ -1,6 +1,17 @@
 configurations: []
 executionInputs: []
-triggers: []
+triggers:
+  - name: mainBaranchTriggerOnBranchPush
+    type: plugin
+    description: null
+    plugin: gitops
+    configuration: null
+    method: push-branch
+    params:
+      - name: branches
+        value: null
+      - name: branchesIgnore
+        value: null
 steps:
   - params:
       - name: COMMANDS
