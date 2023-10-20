@@ -15,15 +15,15 @@ steps:
       - name: workingDir
         code: false
     type: plugin
-    id: CommandLine1
-    displayName: Command Line
+    id: CommandLine2
+    displayName: Command Line branch01
     timeout: null
     agent: null
     retries: null
     plugin: CommandLine@3.2.1
     pluginAccount: null
     method: execute
-    nextStep: null
+    nextStep: CommandLine1
   - params:
       - name: COMMANDS
         code: false
@@ -37,15 +37,15 @@ steps:
       - name: workingDir
         code: false
     type: plugin
-    id: CommandLine2
-    displayName: Command Line branch01
+    id: CommandLine1
+    displayName: Command Line
     timeout: null
     agent: null
     retries: null
     plugin: CommandLine@3.2.1
     pluginAccount: null
     method: execute
-    nextStep: CommandLine1
+    nextStep: null
 kaholoVersion: 6.2.0
 name: pipeline04
 description: ''
