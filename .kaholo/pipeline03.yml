@@ -1,22 +1,11 @@
 configurations: []
 executionInputs: []
-triggers:
-  - name: '3'
-    type: plugin
-    description: '3'
-    plugin: gitops
-    configuration: null
-    method: push-branch
-    params:
-      - name: branches
-        value: null
-      - name: branchesIgnore
-        value: null
+triggers: []
 steps:
   - params:
       - name: COMMANDS
         code: false
-        value: sleep 60
+        value: sleep 15
       - name: finishSignal
         code: false
         value: exit
