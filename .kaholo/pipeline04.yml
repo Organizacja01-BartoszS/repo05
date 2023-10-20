@@ -24,10 +24,21 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
+  - params: []
+    type: plugin
+    id: CommandLine2
+    displayName: Command Line branch01
+    timeout: null
+    agent: null
+    retries: null
+    plugin: CommandLine@3.2.1
+    pluginAccount: null
+    method: null
+    nextStep: CommandLine1
 kaholoVersion: 6.2.0
 name: pipeline04
 description: ''
 agent: null
 timeout: null
 maxConcurrency: 1
-firstStep: CommandLine1
+firstStep: CommandLine2
