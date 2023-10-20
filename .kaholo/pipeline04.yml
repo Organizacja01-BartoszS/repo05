@@ -24,7 +24,18 @@ steps:
     pluginAccount: null
     method: execute
     nextStep: null
-  - params: []
+  - params:
+      - name: COMMANDS
+        code: false
+        value: echo a
+      - name: finishSignal
+        value: exit
+        code: false
+      - name: shell
+        value: default
+        code: false
+      - name: workingDir
+        code: false
     type: plugin
     id: CommandLine2
     displayName: Command Line branch01
@@ -33,7 +44,7 @@ steps:
     retries: null
     plugin: CommandLine@3.2.1
     pluginAccount: null
-    method: null
+    method: execute
     nextStep: CommandLine1
 kaholoVersion: 6.2.0
 name: pipeline04
