@@ -16,7 +16,7 @@ steps:
   - params:
       - name: COMMANDS
         code: false
-        value: sleep 60
+        value: sleep 15
       - name: finishSignal
         code: false
         value: exit
