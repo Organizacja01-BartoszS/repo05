@@ -5,15 +5,16 @@ steps:
   - params:
       - name: COMMANDS
         code: false
-        value: echo a
+        value: echo branchMain
       - name: finishSignal
+        code: false
         value: exit
-        code: false
       - name: shell
-        value: default
         code: false
+        value: default
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine1
     displayName: Command Line
