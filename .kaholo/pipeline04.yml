@@ -1,9 +1,33 @@
-name: pipeline04
-description: ''
-agent: null
-maxConcurrency: 1
-timeout: null
-steps: []
 configurations: []
 executionInputs: []
 triggers: []
+steps:
+  - params:
+      - name: COMMANDS
+        code: false
+        value: echo a
+      - name: finishSignal
+        value: exit
+        code: false
+      - name: shell
+        value: default
+        code: false
+      - name: workingDir
+        code: false
+    type: plugin
+    id: CommandLine1
+    displayName: Command Line
+    timeout: null
+    agent: null
+    retries: null
+    plugin: CommandLine@3.2.1
+    pluginAccount: null
+    method: execute
+    nextStep: null
+kaholoVersion: 6.2.0
+name: pipeline04
+description: ''
+agent: null
+timeout: null
+maxConcurrency: 1
+firstStep: CommandLine1
