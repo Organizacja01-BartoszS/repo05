@@ -18,16 +18,18 @@ steps:
         code: false
         value: echo fromBranch01
       - name: finishSignal
+        code: false
         value: exit
-        code: false
       - name: shell
-        value: default
         code: false
+        value: default
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine2
     displayName: Command Line branch01
+    description: '1'
     timeout: null
     agent: null
     retries: null
@@ -40,13 +42,14 @@ steps:
         code: false
         value: sleep20
       - name: finishSignal
+        code: false
         value: exit
-        code: false
       - name: shell
-        value: default
         code: false
+        value: default
       - name: workingDir
         code: false
+        value: null
     type: plugin
     id: CommandLine1
     displayName: Command Line
