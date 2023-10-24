@@ -1,17 +1,6 @@
 configurations: []
 executionInputs: []
-triggers:
-  - name: onBranchPush
-    type: plugin
-    description: null
-    plugin: gitops
-    configuration: null
-    method: push-branch
-    params:
-      - name: branches
-        value: null
-      - name: branchesIgnore
-        value: null
+triggers: []
 steps:
   - params:
       - name: COMMANDS
